@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageTags>aspire hosting memcached</PackageTags>
+        <Description>Memcached support for .NET Aspire.</Description>
+        <Authors>Akhilesh Agarwal</Authors>
+        <!-- Path to the icon relative to the .csproj file -->
+        <PackageIcon>images/icon.png</PackageIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Aspire.Hosting" Version="8.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="images/icon.png" Pack="true" PackagePath="images/"/>
+    </ItemGroup>
+
+</Project>
